@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta | Pollería</title>
+    <link rel="icon" type="image/x-icon" href="../media/iconlogo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carta.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #ffc107 !important;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img class="sombra" src="../media/logo.png" alt="Logo" width="300" height="160" class="d-inline-block align-text-top">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../pages/Carta.html">Carta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../pages/Bar.html">Bar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../pages/Promociones.html">Promociones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../pages/Salon.html">Salón</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-link active">Contacto (Lima): 
+              <a class="phone" href="#"> +51 951892493</a>
+            </span>
+          </li>
+          <li class="nav-item dropdown" id="user-menu">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../pages/InicioSesion.html">Inicio de Sesión</a></li>
+              <li><a class="dropdown-item" href="../pages/Registro.html">Registro</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"> 
+            <a class="carrito" href="../pages/Delivery.html">
+              <i class="fa-solid fa-drumstick-bite" style="color: #000000; margin-top: 13px;"></i>
+            </a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container mt-5">
+      <h1 class="text-center">Carta</h1>
+      <div id="alert-container"></div>
+      <section class="productos">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../media/cuartodepollo.png" class="card-img-top" alt="1/4 de Pollo Brasa">
+                    <div class="card-body">
+                        <h5 class="card-title">1/4 de Pollo Brasa</h5>
+                        <p class="card-text">1/4 pollo a la brasa + papas fritas + ensalada</p>
+                        <p class="card-price">S/ 18.00</p>
+                        <a href="#" class="btn btn-warning mt-2 order-button" onclick="addItemToCart(1)">Ordenar Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../media/mediopollo.png" class="card-img-top" alt="Medio Pollo Brasa">
+                    <div class="card-body">
+                        <h5 class="card-title">Medio Pollo Brasa</h5>
+                        <p class="card-text">medio pollo a la brasa + papas fritas + ensalada</p>
+                        <p class="card-price">S/ 37.00</p>
+                        <a href="#" class="btn btn-warning mt-2 order-button" onclick="addItemToCart(2)">Ordenar Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../media/polloentero.png" class="card-img-top" alt="Pollo Brasa">
+                    <div class="card-body">
+                        <h5 class="card-title">Pollo Brasa</h5>
+                        <p class="card-text">pollo entero + papas fritas + ensalada</p>
+                        <p class="card-price">S/ 60.00</p>
+                        <a href="#" class="btn btn-warning mt-2 order-button" onclick="addItemToCart(3)">Ordenar Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../media/broaster.png" class="card-img-top" alt="Broaster">
+                    <div class="card-body">
+                        <h5 class="card-title">Broaster</h5>
+                        <p class="card-text">1/4 pollo broaster + papas fritas</p>
+                        <p class="card-price">S/ 20.00</p>
+                        <a href="#" class="btn btn-warning mt-2 order-button" onclick="addItemToCart(4)">Ordenar Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../media/parrilla.png" class="card-img-top" alt="Parrilla">
+                    <div class="card-body">
+                        <h5 class="card-title">Parrilla</h5>
+                        <p class="card-text">1/4 de pollo + 1 chorizo + 1 frankfurter + 1 palito de anticucho + 200g mollejas + 1 pechuga de pollo 250g + 1 chuleta 200g</p>
+                        <p class="card-price">S/ 85.00</p>
+                        <a href="#" class="btn btn-warning mt-2 order-button" onclick="addItemToCart(5)">Ordenar Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../media/ensalada.png" class="card-img-top" alt="Ensalada de Pollo">
+                    <div class="card-body">
+                        <h5 class="card-title">Ensalada de Pollo</h5>
+                        <p class="card-text">Ensalada fresca + trozos de pechuga de pollo</p>
+                        <p class="card-price">S/ 25.00</p>
+                        <a href="#" class="btn btn-warning mt-2 order-button" onclick="addItemToCart(6)">Ordenar Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../media/chaufa.png" class="card-img-top" alt="Arroz Chaufa">
+                    <div class="card-body">
+                        <h5 class="card-title">Arroz Chaufa</h5>
+                        <p class="card-text">arroz chaufa de pollo , carne o chancho</p>
+                        <p class="card-price">S/ 15.00</p>
+                        <a href="#" class="btn btn-warning mt-2 order-button" onclick="addItemToCart(7)">Ordenar Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../media/monstrito.png" class="card-img-top" alt="1/4 de pollo + Arroz Chaufa">
+                    <div class="card-body">
+                        <h5 class="card-title">1/4 de pollo + Arroz Chaufa</h5>
+                        <p class="card-text">1/4 de pollo a la brasa + arroz chaufa + papas fritas</p>
+                        <p class="card-price">S/ 22.00</p>
+                        <a href="#" class="btn btn-warning mt-2 order-button" onclick="addItemToCart(8)">Ordenar Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="../media/piqueo.png" class="card-img-top" alt="Piqueo Brasa">
+                    <div class="card-body">
+                        <h5 class="card-title">Piqueo Brasa</h5>
+                        <p class="card-text">5 tequenos de queso + mollejas + 5 alitas de pollo  + papas fritas + cremas</p>
+                        <p class="card-price">S/ 40.00</p>
+                        <a href="#" class="btn btn-warning mt-2 order-button" onclick="addItemToCart(9)">Ordenar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #007B40;">Pollos Campeones</h5>
+          <p class="mb-4" style="font-size: 110%;">
+            En tu casa o en la nuestra no importa donde estés, 
+            <br>
+            siempre vamos a engreirte con el gran sabor que nos caracteriza. 
+            <br>
+            ¡Gracias por preferirnos!
+          </p>
+          <h5 class="mb-2 " style="letter-spacing: 2px; color: #007B40; font-weight: bold;">Nuestras Redes</h5>
+          <div class="container">
+            <section class="mb-4">
+              <a class="btn text-white btn-floating m-1" style="background-color: #0866ff;" href="https://www.facebook.com/profile.php?id=61560775829988" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn text-white btn-floating m-1" style="background-color: #1d9bf0;" href="https://x.com/PollosCampeones" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+              <a class="btn text-white btn-floating m-1" style="background-color: #ed2048;" href="https://www.instagram.com/polloscampeones/" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+              <a class="btn text-white btn-floating m-1" style="background-color: #000000;" href="https://www.tiktok.com/@polloscampeones" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+              <a class="btn text-white btn-floating m-1" style="background-color: #26d366;" href="https://api.whatsapp.com/send?phone=51951892493&text=Hola%20t%C3%ADo%20Campe%C3%B3n,%20hoy%20deseo%20ordenar..." target="_blank" role="button"><i class="fab fa-whatsapp"></i></a>
+            </section>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px;">Mapa del Sitio</h5>
+          <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d975.216938717923!2d-77.03439173038214!3d-12.121199688051727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDA3JzE2LjMiUyA3N8KwMDInMDEuNSJX!5e0!3m2!1ses!2spe!4v1717560423430!5m2!1ses!2spe" 
+            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-2">
+          <h5 class="mb-0" style="letter-spacing: 2px; color: #007B40; font-weight: bold;">Métodos de Pago</h5>
+          <div class="d-flex flex-row bd-highlight mb-3">
+            <div class="p-2 bd-highlight flex-*-shrink-1"><img src="../media/visaicon.png" class="img-thumbnail"></div>
+            <div class="p-2 bd-highlight flex-*-shrink-1"><img src="../media/amexpicon.png" class="img-thumbnail"></div>
+            <div class="p-2 bd-highlight flex-*-shrink-1"><img src="../media/mastercardicon.png" class="img-thumbnail"></div>
+            <div class="p-2 bd-highlight flex-*-shrink-1"><img src="../media/pageficon.png" class="img-thumbnail"></div>
+          </div>
+          <h5 class="" style="letter-spacing: 2px; color: #007B40; font-weight: bold;">Libro de Reclamaciones</h5>
+          <div class="p-2 bd-highlight flex-*-shrink-1" style="width: 50%;"><img src="../media/librec.png" class="img-thumbnail"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../js/Carrito.js"></script>
+  <script src="../js/Delivery.js"></script>
+  <script>
+    $(document).ready(function() {
+        $.ajax({
+            url: '../php/Logueado.php',
+            method: 'GET',
+            dataType: 'json',
+            success: function(response) {
+                console.log(response);
+                if (response.logged_in) {
+                    $('#user-menu').html(`
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i> ${response.user_name}
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../php/CerrarSesion.php">Cerrar Sesión</a></li>
+                        </ul>
+                    `);
+                } else {
+                    $('.order-button').each(function() {
+                        $(this).attr('href', '../pages/InicioSesion.html');
+                        $(this).text('Inicia sesión para ordenar');
+                        $(this).removeAttr('onclick');
+                    });
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error("Error en la solicitud AJAX:", status, error);
+            }
+        });
+    });
+  </script>
+</body>
+</html>
