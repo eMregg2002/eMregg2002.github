@@ -1,0 +1,63 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #C21807;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #007B40; /* Añadir color para el texto del formulario */
+}
+
+.btn-primary {
+    background-color: #007B40;
+    border-color: #007B40;
+}
+
+.btn-primary:hover {
+    background-color: #00592d;
+    border-color: #00592d;
+}
+
+.footer {
+    background-color: #ffc107;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer h5 {
+    color: #007B40;
+}
+
+.footer p {
+    color: #333;
+}
+
+.footer a {
+    color: #007B40;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #00592d;
+}

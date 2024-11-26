@@ -1,0 +1,105 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #ffc107;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #007B40;
+}
+
+.btn-primary {
+    background-color: #007B40;
+    border-color: #007B40;
+}
+
+.btn-primary:hover {
+    background-color: #00592d;
+    border-color: #00592d;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, .8));
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    .card-body {
+        padding: 1.5rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .form-label {
+        font-size: 1rem;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .text-center {
+        font-size: 0.9rem;
+    }
+    .img-fluid {
+        max-width: 80%;
+    }
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0.5rem;
+    }
+    .card-body {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    .form-label {
+        font-size: 0.9rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .text-center {
+        font-size: 0.8rem;
+    }
+    .img-fluid {
+        max-width: 70%;
+    }
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
